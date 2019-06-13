@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="security_question">
+    <item>What is your Mothers maiden name</item>
+    <item>What is the name of your favorite childhood uncle</item>
+    <item>What is the name of your favorite pet</item>
+    <item>Where is your dream location for a vacation</item>
+    </array>
+</resources>

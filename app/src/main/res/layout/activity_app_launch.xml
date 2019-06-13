@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppLaunch"
+    android:background="@color/grey">
+
+
+    <LinearLayout
+        android:id="@+id/textsplash"
+        android:elevation="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets set you up"
+            android:textSize="23sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="80dp"
+            />
+
+        <ImageView
+            android:id="@+id/firstNameImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/transparent"/>
+
+        <EditText
+            android:id="@+id/firstName"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/hint"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-42dp"
+            android:hint="Firstname"
+            android:inputType="textPersonName"/>
+
+
+
+        <ImageView
+            android:id="@+id/lastNameImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/transparent"/>
+
+        <EditText
+            android:id="@+id/lastName"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/hint"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-42dp"
+            android:hint="Surname"
+            android:inputType="textPersonName"/>
+
+
+        <ImageView
+            android:id="@+id/emailImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/transparent"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/hint"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-42dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <ImageView
+            android:id="@+id/phoneImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/transparent"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/hint"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-42dp"
+            android:hint="Phone no"
+            android:inputType="phone"/>
+
+
+        <ImageView
+            android:id="@+id/addressImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/transparent"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/hint"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-42dp"
+            android:hint="Home address"
+            android:inputType="textPostalAddress"/>
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find My Phone"
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_marginTop="-270dp"
+            />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="we make sure you never loose your phone"
+            android:textSize="12sp"
+            android:textColor="#FFF"
+            android:layout_marginTop="25dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="526dp"
+        android:layout_height="900dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:src="@drawable/forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

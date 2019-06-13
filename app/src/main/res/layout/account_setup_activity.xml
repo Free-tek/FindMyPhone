@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almost done"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="23sp" />
+
+
+            <com.daasuu.ahp.AnimateHorizontalProgressBar
+                android:id="@+id/animate_progress_bar"
+                android:layout_marginTop="40dp"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                app:ahp_backgroundColor="@color/colorPrimaryDark"
+                app:ahp_progressColor="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/passwordImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="110dp"
+                android:src="@drawable/transparent"/>
+
+
+            <EditText
+                android:id="@+id/password"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/hint"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="110dp"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+
+            <ImageView
+                android:id="@+id/confirmPasswordImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/transparent"/>
+
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/hint"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="180dp"
+                android:hint="Confirm password"
+                android:inputType="textPassword"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="260dp">
+                <RadioButton
+                    android:textSize="14sp"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male"/>
+                <RadioButton
+                    android:textSize="14sp"
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Female"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="340dp"
+                android:text="Answer Security Question"/>
+
+            <Spinner
+                android:textStyle="normal"
+                android:id="@+id/security"
+                android:padding="2dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370dp"
+                android:layout_marginLeft="-10dp"
+                android:spinnerMode="dropdown"/>
+
+
+            <ImageView
+                android:id="@+id/securityQuestionImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="420dp"
+                android:src="@drawable/transparent"/>
+
+
+            <EditText
+                android:id="@+id/securityQuestion"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/hint"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="420dp"
+                android:hint="Answer to question"
+                android:inputType="textPassword"/>
+
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Done"
+                android:background="@drawable/button_black"
+                android:layout_marginTop="500dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"/>
+
+
+            <ImageView
+                android:id="@+id/complete"
+                android:layout_height="140dp"
+                android:layout_width="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check"
+                />
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/complete"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
